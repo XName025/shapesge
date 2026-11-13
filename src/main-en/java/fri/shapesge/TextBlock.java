@@ -1,5 +1,6 @@
 package fri.shapesge;
 
+import fri.shapesge.drawables.TextAlign;
 import fri.shapesge.drawables.TextDrawable;
 
 import java.awt.Color;
@@ -27,7 +28,7 @@ public class TextBlock {
      */
     @SuppressWarnings("unused")
     public TextBlock(String text, int x, int y) {
-        this.drawable = new TextDrawable(x, y, Color.black, text, new Font(Font.SERIF, Font.PLAIN, 12));
+        this.drawable = new TextDrawable(x, y, Color.black, text, new Font(Font.SERIF, Font.PLAIN, 12), TextAlign.LEFT);
     }
 
     /**
@@ -159,5 +160,15 @@ public class TextBlock {
     @SuppressWarnings("unused")
     public void changePosition(int x, int y) {
         this.drawable.moveTo(x, y);
+    }
+
+    /**
+     * Change the alignment of the text.
+     *
+     * @param align alignment of the text
+     */
+    @SuppressWarnings("unused")
+    public void changeAlign(TextAlign align) {
+        this.drawable.changeAlign(align);
     }
 }

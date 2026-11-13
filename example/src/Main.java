@@ -8,6 +8,7 @@ import fri.shapesge.SoundEffect;
 import fri.shapesge.SoundMixer;
 import fri.shapesge.Square;
 import fri.shapesge.TextBlock;
+import fri.shapesge.TextAlign;
 import fri.shapesge.Triangle;
 
 import java.util.Random;
