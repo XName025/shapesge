@@ -165,6 +165,7 @@ public class TextBlock {
      * Change the alignment of the text.
      *
      * @param align alignment of the text
+     *              (the location, relative to the text, of the point we have identified)
      */
     @SuppressWarnings("unused")
     public void changeAlign(TextAlign align) {
