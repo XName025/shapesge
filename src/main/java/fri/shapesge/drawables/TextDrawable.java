@@ -1,5 +1,6 @@
 package fri.shapesge.drawables;
 
+import fri.shapesge.TextAlign;
 import fri.shapesge.engine.Game;
 
 import java.awt.Color;
